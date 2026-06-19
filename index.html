@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="cesium/Widgets/widgets.css">
+  <title>Cesium App</title>
+</head>
+
+<body>
+
+<div id="toolbar">
+
+  <!-- 🟢 TERRAIN SLIDER -->
+  <div>
+    <label>Terrain-Überhöhung</label><br>
+    <input
+            id="terrainSlider"
+            type="range"
+            min="1"
+            max="10"
+            step="0.1"
+            value="3"
+    />
+    <span id="terrainValue">3.0</span>x
+  </div>
+
+  <br>
+
+  <!-- 🔵 TILESET SLIDER -->
+  <div>
+    <label>Tileset Höhe</label><br>
+    <input
+            id="tilesetSlider"
+            type="range"
+            min="-200"
+            max="200"
+            step="1"
+            value="0"
+    />
+    <span id="tilesetValue">0</span> m
+  </div>
+
+</div>
+
+<div id="cesiumContainer"></div>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
